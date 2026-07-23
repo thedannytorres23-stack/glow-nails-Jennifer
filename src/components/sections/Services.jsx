@@ -1,23 +1,76 @@
 import ServiceCard from "../cards/ServiceCard";
 
-<section id="servicios"></section>
-
 export default function Services() {
   return (
-    <section className="py-24 bg-white">
+    <section
+      id="servicios"
+      className="
+        bg-white
+        px-4 py-20
+        sm:px-6 sm:py-24
+        lg:px-8 lg:py-28
+      "
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <span
+            className="
+              inline-flex items-center gap-2
+              rounded-full
+              border border-pink-100
+              bg-pink-50
+              px-4 py-2
+              text-xs font-bold
+              text-pink-600
+              shadow-sm
+              sm:text-sm
+            "
+          >
+            ✨ Nuestros servicios
+          </span>
 
-      <div className="max-w-7xl mx-auto px-6">
+          <h2
+            className="
+              mt-5
+              font-serif
+              text-4xl font-semibold
+              leading-tight
+              tracking-[-0.03em]
+              text-gray-900
+              sm:text-5xl
+              lg:text-6xl
+            "
+          >
+            Todo lo que necesitas para
+            <span className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
+              {" "}lucir increíble
+            </span>
+          </h2>
 
-        <h2 className="text-5xl font-bold text-center text-gray-900">
-          Nuestros Servicios
-        </h2>
+          <p
+            className="
+              mx-auto mt-5
+              max-w-2xl
+              text-base leading-7
+              text-gray-600
+              sm:text-lg
+            "
+          >
+            Cada servicio está pensado para resaltar tu estilo,
+            cuidar tus uñas y ofrecerte una experiencia relajante
+            desde el primer momento.
+          </p>
+        </div>
 
-        <p className="text-center text-gray-600 mt-4 mb-14">
-          Diseñados para resaltar tu estilo y personalidad.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-8">
-
+        <div
+          className="
+            mt-12
+            grid gap-6
+            sm:grid-cols-2
+            lg:grid-cols-3
+            lg:gap-8
+          "
+        >
           <ServiceCard
             icono="💅"
             titulo="Manicure"
@@ -35,11 +88,8 @@ export default function Services() {
             titulo="Pedicure"
             descripcion="Cuidado completo para lucir impecable."
           />
-
         </div>
-
       </div>
-
     </section>
   );
 }
